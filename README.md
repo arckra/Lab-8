@@ -1,11 +1,14 @@
 # Tugas Bahasa Pemrograman Pertemuan ke-11
 
-**DIAGRAM CLASS**
+
+# DIAGRAM CLASS
 ![Diagram class](https://github.com/user-attachments/assets/10d783de-09a5-4987-8517-f5acef116fca)
 
-**FLOWCHART**
 
-**PENJELASAN CODE**
+# FLOWCHART
+
+
+# PENJELASAN CODE
 
 Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk mengelola data mahasiswa, termasuk penjelasan tentang setiap bagian dari kode tersebut:
 
@@ -110,17 +113,84 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
 ```
 
 
-**PENJELASAN DIAGRAM CLASS**
+# PENJELASAN DIAGRAM CLASS
 
-1. Nama Kelas: Mahasiswa
-    * Kelas ini digunakan untuk mengelola data mahasiswa.
+# Struktur Kelas
 
-2. Atribut:
-    * daftar_mahasiswa: List yang menyimpan data mahasiswa dalam bentuk dictionary. Setiap dictionary berisi nama, nim, dan nilai.
+# 1. Kelas Mahasiswa
+**Deskripsi**
+Kelas ini adalah inti dari manajemen data mahasiswa, bertanggung jawab untuk mengelola seluruh operasi pada data mahasiswa.
 
-3. Metode:
-    + __init__(): Konstruktor yang menginisialisasi daftar_mahasiswa sebagai list kosong.
-    + tambah(nama: str, nim: int, nilai: int): Metode untuk menambahkan mahasiswa baru ke dalam daftar. Menerima parameter nama (string), nim (integer), dan nilai (integer).
-    + tampilkan(): Metode untuk menampilkan semua data mahasiswa yang ada dalam daftar.
-    + hapus(nama: str): Metode untuk menghapus data mahasiswa berdasarkan nama. Menerima parameter nama (string).
-    + ubah(nama: str, nim_baru: int, nilai_baru: int): Metode untuk mengubah data mahasiswa berdasarkan nama. Menerima parameter nama (string), nim_baru (integer), dan nilai_baru (integer).
+**Atribut**
+- `daftar_mahasiswa` (private list): 
+  - Menyimpan kumpulan data mahasiswa
+  - Bersifat privat untuk melindungi integritas data
+
+**Metode**
+1. `__init__()`: 
+   - Konstruktor kelas
+   - Menginisialisasi list kosong untuk menyimpan data mahasiswa
+
+2. `tambah(nama, nim, nilai)`:
+   - Menambahkan mahasiswa baru ke dalam daftar
+   - Menerima parameter nama, NIM, dan nilai
+   - Membuat entri baru dalam daftar mahasiswa
+
+3. `tampilkan()`:
+   - Menampilkan seluruh data mahasiswa yang tersimpan
+   - Menangani kasus daftar kosong
+   - Menampilkan informasi setiap mahasiswa termasuk nama, NIM, dan nilai
+
+4. `hapus(nama)`:
+   - Menghapus data mahasiswa berdasarkan nama
+   - Mencari mahasiswa dengan nama tertentu
+   - Menghapus entri jika ditemukan
+   - Memberikan konfirmasi atau pesan kesalahan
+
+5. `ubah(nama, nim_baru, nilai_baru)`:
+   - Mengubah data mahasiswa yang sudah ada
+   - Mencari mahasiswa berdasarkan nama
+   - Memperbarui NIM dan nilai
+   - Memberikan konfirmasi perubahan
+
+# 2. Kelas DataMahasiswa
+
+
+**Deskripsi**
+- Kelas ini merupakan struktur data untuk menyimpan informasi individual setiap mahasiswa.
+
+**Atribut**
+- `nama` (string): Nama lengkap mahasiswa
+- `nim` (integer): Nomor Induk Mahasiswa 
+- `nilai` (integer): Nilai akademik mahasiswa
+
+# 3. Kelas Main
+
+
+**Deskripsi**
+Kelas yang bertanggung jawab untuk menjalankan program dan berinteraksi dengan pengguna.
+
+**Metode**
+1. `main()`:
+   - Fungsi utama untuk menjalankan program
+   - Membuat instance kelas Mahasiswa
+   - Memulai loop utama program
+
+2. `tampilkan_menu()`:
+   - Menampilkan pilihan menu kepada pengguna
+   - Memudahkan interaksi dan navigasi program
+
+3. `pilih_menu()`:
+   - Memproses pilihan menu yang dipilih pengguna
+   - Memanggil metode yang sesuai dari kelas Mahasiswa
+
+# Hubungan Antar Kelas
+
+**Komposisi (Mahasiswa  -- 0.. DataMahasiswa)**
+- Kelas Mahasiswa mengandung beberapa objek DataMahasiswa
+- Hubungan komposisi berarti objek DataMahasiswa tidak dapat eksis tanpa Mahasiswa
+- Satu objek Mahasiswa dapat memiliki 0 atau lebih objek DataMahasiswa
+
+**Asosiasi (Main ..> Mahasiswa)**
+- Kelas Main menggunakan (uses) kelas Mahasiswa
+- Main bergantung pada fungsionalitas Mahasiswa untuk menjalankan program
