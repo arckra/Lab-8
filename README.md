@@ -111,17 +111,17 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
 
 **PENJELASAN DIAGRAM CLASS**
 
-- Nama Kelas: Mahasiswa
-Kelas ini digunakan untuk mengelola data mahasiswa.
+1. Nama Kelas: Mahasiswa
+    Kelas ini digunakan untuk mengelola data mahasiswa.
 
 
-- Atribut:
-* daftar_mahasiswa: List yang menyimpan data mahasiswa dalam bentuk dictionary. Setiap dictionary berisi nama, nim, dan nilai.
+2. Atribut:
+    * daftar_mahasiswa: List yang menyimpan data mahasiswa dalam bentuk dictionary. Setiap dictionary berisi nama, nim, dan nilai.
 
 
-- Metode:
-* + __init__(): Konstruktor yang menginisialisasi daftar_mahasiswa sebagai list kosong.
-* + tambah(nama: str, nim: int, nilai: int): Metode untuk menambahkan mahasiswa baru ke dalam daftar. Menerima parameter nama (string), nim (integer), dan nilai (integer).
-* + tampilkan(): Metode untuk menampilkan semua data mahasiswa yang ada dalam daftar.
-* + hapus(nama: str): Metode untuk menghapus data mahasiswa berdasarkan nama. Menerima parameter nama (string).
-* + ubah(nama: str, nim_baru: int, nilai_baru: int): Metode untuk mengubah data mahasiswa berdasarkan nama. Menerima parameter nama (string), nim_baru (integer), dan nilai_baru (integer).
+3. Metode:
+    [+ __init__()]: Konstruktor yang menginisialisasi daftar_mahasiswa sebagai list kosong.
+    + tambah(nama: str, nim: int, nilai: int): Metode untuk menambahkan mahasiswa baru ke dalam daftar. Menerima parameter nama (string), nim (integer), dan nilai (integer).
+    + tampilkan(): Metode untuk menampilkan semua data mahasiswa yang ada dalam daftar.
+    + hapus(nama: str): Metode untuk menghapus data mahasiswa berdasarkan nama. Menerima parameter nama (string).
+    + ubah(nama: str, nim_baru: int, nilai_baru: int): Metode untuk mengubah data mahasiswa berdasarkan nama. Menerima parameter nama (string), nim_baru (integer), dan nilai_baru (integer).
