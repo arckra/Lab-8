@@ -13,7 +13,8 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
 
 ```class Mahasiswa:
     def __init__(self):
-        self.daftar_mahasiswa = []```
+        self.daftar_mahasiswa = []
+```
 
 - class Mahasiswa: Mendefinisikan kelas Mahasiswa yang akan digunakan untuk mengelola data mahasiswa.
 - __init__: Merupakan metode konstruktor yang dipanggil saat objek dari kelas ini dibuat. Di sini, kita menginisialisasi atribut daftar_mahasiswa sebagai list kosong yang akan menyimpan data mahasiswa.
