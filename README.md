@@ -25,7 +25,8 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
 
 ```def tambah(self, nama, nim, nilai):
     self.daftar_mahasiswa.append({'nama': nama, 'nim': nim, 'nilai': nilai})
-    print(f"Data mahasiswa {nama} (NIM: {nim}) berhasil ditambahkan.")```
+    print(f"Data mahasiswa {nama} (NIM: {nim}) berhasil ditambahkan.")
+```
 
 - tambah(self, nama, nim, nilai): Method ini digunakan untuk menambahkan data mahasiswa baru ke dalam daftar.
 - self.daftar_mahasiswa.append(...): Menambahkan dictionary yang berisi nama, nim, dan nilai mahasiswa ke dalam list daftar_mahasiswa.
@@ -41,7 +42,8 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
         return
     print("Daftar Mahasiswa:")
     for index, mahasiswa in enumerate(self.daftar_mahasiswa, start=1):
-        print(f"{index}. Nama: {mahasiswa['nama']}, NIM: {mahasiswa['nim']}, Nilai: {mahasiswa['nilai']}")```
+        print(f"{index}. Nama: {mahasiswa['nama']}, NIM: {mahasiswa['nim']}, Nilai: {mahasiswa['nilai']}")
+```
         
 - tampilkan(self): Method ini digunakan untuk menampilkan semua data mahasiswa yang ada dalam daftar.
 - if not self.daftar_mahasiswa:: Memeriksa apakah daftar mahasiswa kosong. Jika kosong, program akan menampilkan pesan dan keluar dari method.
@@ -58,7 +60,8 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
             self.daftar_mahasiswa.remove(mahasiswa)
             print(f"Data mahasiswa {nama} berhasil dihapus.")
             return
-    print(f"Data mahasiswa {nama} tidak ditemukan.")```
+    print(f"Data mahasiswa {nama} tidak ditemukan.")
+```
     
 - hapus(self, nama): Method ini digunakan untuk menghapus data mahasiswa berdasarkan nama.
 - for mahasiswa in self.daftar_mahasiswa:: Melakukan iterasi melalui daftar mahasiswa.
@@ -77,7 +80,8 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
             mahasiswa['nilai'] = nilai_baru
             print(f"Data mahasiswa {nama} berhasil diubah menjadi NIM {nim_baru} dan nilai {nilai_baru}.")
             return
-    print(f"Data mahasiswa {nama} tidak ditemukan.")```
+    print(f"Data mahasiswa {nama} tidak ditemukan.")
+```
     
 - ubah(self, nama, nim_baru, nilai_baru): Method ini digunakan untuk mengubah data mahasiswa berdasarkan nama.
 - if mahasiswa['nama'] == nama:: Memeriksa apakah nama mahasiswa yang ingin diubah ada dalam daftar.
@@ -101,4 +105,5 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
         
         pilihan = input("Pilih menu (1-5): ")
         
-        if pilihan```
+        if pilihan
+```
