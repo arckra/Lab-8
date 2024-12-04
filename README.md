@@ -1,6 +1,7 @@
 # Tugas Bahasa Pemrograman Pertemuan ke-11
 
 **DIAGRAM CLASS**
+![Diagram class](https://github.com/user-attachments/assets/10d783de-09a5-4987-8517-f5acef116fca)
 
 **FLOWCHART**
 
