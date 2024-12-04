@@ -6,6 +6,7 @@
 
 
 # FLOWCHART
+![Flowchart Lab8](https://github.com/user-attachments/assets/25f99020-5b23-43c3-a0ad-e0dd3cca9aa8)
 
 
 # PENJELASAN CODE
