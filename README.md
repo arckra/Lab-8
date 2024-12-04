@@ -119,7 +119,7 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
 
 # 1. Kelas Mahasiswa
 **Deskripsi**
-Kelas ini adalah inti dari manajemen data mahasiswa, bertanggung jawab untuk mengelola seluruh operasi pada data mahasiswa.
+- Kelas ini adalah inti dari manajemen data mahasiswa, bertanggung jawab untuk mengelola seluruh operasi pada data mahasiswa.
 
 **Atribut**
 - `daftar_mahasiswa` (private list): 
@@ -168,7 +168,7 @@ Kelas ini adalah inti dari manajemen data mahasiswa, bertanggung jawab untuk men
 
 
 **Deskripsi**
-Kelas yang bertanggung jawab untuk menjalankan program dan berinteraksi dengan pengguna.
+- Kelas yang bertanggung jawab untuk menjalankan program dan berinteraksi dengan pengguna.
 
 **Metode**
 1. `main()`:
